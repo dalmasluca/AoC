@@ -5,11 +5,10 @@ import (
 	"fmt"
 	"os"
 	"strings"
-    "math"
 )
 
 func scores(enemy, me rune) int {
-    return int(math.Abs(float64((int(enemy - 'A' - me + 'X') - 1 % 3) * 3))) + int(me - 'Z') + 1
+    return int(me - 'X') * 3 + ((int(enemy - 'A' + (me - 'Y')) + 3) % 3) + 1
 }
 
 func main() {
