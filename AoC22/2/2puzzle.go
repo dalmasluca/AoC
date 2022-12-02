@@ -1,51 +1,22 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
-    "bufio"
-    "os"
 )
 
-func score(a, b string) int {
-    switch a{
-    case "A":
-        switch b{
-        case "X":
-            return 0 + 3
-        case "Y":
-            return 3 + 1
-        case "Z":
-            return 6 + 2
-        }
-    case "B":
-        switch b{
-        case "X":
-            return 0 + 1
-        case "Y":
-            return 3 + 2
-        case "Z":
-            return 6 + 3
-        }
-    case "C":
-        switch b{
-        case "X":
-            return 0 + 2
-        case "Y":
-            return 3 + 3
-        case "Z":
-            return 6 + 1
-        }
-    }
-    return 0
+func scores(enemy, me rune) int {
+    return int(me - 'X') * 3 + ((int(enemy - 'A' + (me - 'Y')) + 3) % 3) + 1
 }
 
-func main(){
-    var totalScore int
-    scanner := bufio.NewScanner(os.Stdin)
-    for scanner.Scan() {
-        game := strings.Split(scanner.Text(), " ")
-        totalScore += score(game[0],game[1])
+func main() {
+	var totalScore int 
+	scanner := bufio.NewScanner(os.Stdin)
+	for scanner.Scan() {
+	    sliceofString := strings.Split(scanner.Text(), " ")
+        totalScore += scores( rune(sliceofString[0][0]), rune(sliceofString[1][0]))
     }
-    fmt.Println(totalScore)
+	fmt.Println(totalScore)
 }
