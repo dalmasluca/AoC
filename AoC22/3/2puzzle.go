@@ -8,20 +8,17 @@ import (
 )
 
 func priority(s1,s2,s3 string) int {
-    var priority int 
-    presente := make(map[rune]bool)
 
     for _, runa := range s1 {
         if strings.Contains(s2, string(runa)) && strings.Contains(s3, string(runa)) {
-            if runa <= 'z' && runa >= 'a' && !presente[runa] {
-                priority += int(runa - 'a' + 1)
-            }else if (!presente[runa]){
-                priority += int(runa - 'A' + 'z' - 'a' + 2)
+            if runa <= 'z' && runa >= 'a' {
+                return int(runa - 'a' + 1)
+            }else{
+               return int(runa - 'A' + 'z' - 'a' + 2)
             }
-            presente[runa] = true
         }
     }
-    return priority
+    return 0
 }
 
 func main(){

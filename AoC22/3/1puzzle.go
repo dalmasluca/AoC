@@ -8,23 +8,20 @@ import (
 )
 
 func priority(s string) int {
-    var priority int 
     meta := len(s)/2
     prima := s[:meta]
     seconda := s[meta:]
-    presente := make(map[rune]bool)
 
     for _, runa := range prima {
         if strings.Contains(seconda, string(runa)) {
-            if runa <= 'z' && runa >= 'a' && !presente[runa] {
-                priority += int(runa - 'a' + 1)
-            }else if (!presente[runa]){
-                priority += int(runa - 'A' + 'z' - 'a' + 2)
+            if runa <= 'z' && runa >= 'a' {
+                return int(runa - 'a' + 1)
+            }else{
+                return int(runa - 'A' + 'z' - 'a' + 2)
             }
-            presente[runa] = true
         }
     }
-    return priority
+    return 0
 }
 
 func main(){
