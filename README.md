@@ -1,6 +1,6 @@
-#Advent of Code
+# Advent of Code
 
-My solution about [Advent of Code](htpps://adventofcode)
+My solution about [Advent of Code](htpps://adventofcode.com)
 
 - [2022](https://ghitub.com/dalmasluca/Aoc/AoC22)
     - [day 1](https://ghitub.com/dalmasluca/Aoc/AoC22/1)
