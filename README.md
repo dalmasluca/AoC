@@ -1,6 +1,6 @@
 # Advent of Code
 
-My solution about [Advent of Code](https://adventofcode.com)
+My solution for [Advent of Code](https://adventofcode.com)
 
 - [2022](https://ghitub.com/dalmasluca/Aoc/AoC22)
     - [day 1](https://ghitub.com/dalmasluca/Aoc/AoC22/1)
