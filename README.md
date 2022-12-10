@@ -9,5 +9,4 @@ My solution for [Advent of Code](https://adventofcode.com)
     - [day 4](https://github.com/dalmasluca/AoC/tree/master/AoC22/4)
     - [day 5](https://github.com/dalmasluca/AoC/tree/master/AoC22/5)
     - [day 6](https://github.com/dalmasluca/AoC/tree/master/AoC22/6)
-    - [day 7](https://github.com/dalmasluca/AoC/tree/master/AoC22/7)
-        This was the first day where i meet the first problem
+    - [day 7](https://github.com/dalmasluca/AoC/tree/master/AoC22/7) [(*)](https://github.com/dalmasluca/AoC/tree/master/AoC22/7)
