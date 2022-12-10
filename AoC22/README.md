@@ -5,4 +5,4 @@ This year i decide to use [GO](go.dev) as language because i need to improve my 
 I love programming and I am quite competitive so I aim to solve it in less time as I can. However i won't to wake up at 6 A.M. or spend my private time to solve the problem.
 
 ## Inspiration
-    - [isachetto](https://github.com/isacchetto)
+ - [isachetto](https://github.com/isacchetto)
