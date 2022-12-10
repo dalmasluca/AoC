@@ -1,4 +1,4 @@
-# How this year i decide to solve AoC
+# How I decide to solve AoC this year
 ## Language
 This year i decide to use [GO](go.dev) as language because i need to improve my skill with it 'cause University course ask it to me. I never thought a similar things before but the language whit you programming make a lot of differents.. and Go is a fucking peace of shit.
 ## Speed
