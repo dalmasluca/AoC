@@ -27,13 +27,9 @@ func puzzle2() {
 
 	for scanner.Scan() {
 		line := scanner.Text()
-		fmt.Printf("line: %v\n", line)
 
 		firstIndexDigit := strings.IndexFunc(line, unicode.IsDigit)
 		lastIndexDigit := strings.LastIndexFunc(line, unicode.IsDigit)
-
-		fmt.Printf("firstIndexDigit: %v\n", firstIndexDigit)
-		fmt.Printf("lastIndexDigit: %v\n", lastIndexDigit)
 
 		firstIndexWord := len(line)
 		lastIndexWord := 0
@@ -59,12 +55,9 @@ func puzzle2() {
 			firstNumber, _ = strconv.Atoi(string(line[firstIndexDigit]))
 		}
 
-		if lastIndexDigit >= lastIndexWord {
+		if lastIndexDigit > lastIndexWord {
 			lastNumber, _ = strconv.Atoi(string(line[lastIndexDigit]))
 		}
-
-		fmt.Printf("firstNumber: %v\n", firstNumber)
-		fmt.Printf("lastNumber: %v\n", lastNumber)
 
 		somma += (firstNumber*10 + lastNumber)
 	}
