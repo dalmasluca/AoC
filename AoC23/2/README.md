@@ -1,5 +1,3 @@
-# 2
+# Day 2
 
-dificulty: 2/10
-
-
+Dificulty       2/10
