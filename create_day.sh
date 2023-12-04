@@ -9,7 +9,7 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-day=$(printf "%d" "$1") # %02d = performs decimal integer conversion 'd', formatted with zero padding '0', with width '2'
+day=$(printf "%02d" "$1") # %02d = performs decimal integer conversion 'd', formatted with zero padding '0', with width '2'
 
 mkdir "AoC23/$day"
 cd "AoC23/$day"

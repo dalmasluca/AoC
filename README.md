@@ -5,7 +5,7 @@ My solution for [Advent of Code](https://adventofcode.com)
 - [2023](https://github.com/dalmasluca/AoC/tree/master/AoC23)
     - [day 1](https://github.com/dalmasluca/AoC/tree/master/AoC23/1) 
     - [day 2](https://github.com/dalmasluca/AoC/tree/master/AoC23/2)
-
+    - [day 4](https://github.com/dalmasluca/AoC/tree/master/AoC23/4)
 
 
 
