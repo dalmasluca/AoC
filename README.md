@@ -7,7 +7,7 @@ My solution for [Advent of Code](https://adventofcode.com)
     - [day 2](https://github.com/dalmasluca/AoC/tree/master/AoC23/02)
     - [day 3](https://github.com/dalmasluca/AoC/tree/master/AoC23/03)
     - [day 4](https://github.com/dalmasluca/AoC/tree/master/AoC23/04)
-
+    - [day 6](https://github.com/dalmasluca/AoC/tree/master/AoC23/06)
 
 
 - [2022](https://github.com/dalmasluca/AoC/tree/master/AoC22)
