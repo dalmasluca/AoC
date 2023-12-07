@@ -2,8 +2,8 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"os"
+	"slices"
 	"strconv"
 	"strings"
 )
@@ -12,30 +12,31 @@ func puzzle1(name string) int {
 	in, _ := os.Open(name)
 	scanner := bufio.NewScanner(in)
 	var seeds []int
-	var mapping [][]uint
+	var mapping []int = make([]int, 3)
+	var check []bool
 	scanner.Scan()
 
 	for _, k := range strings.Split(strings.Split(scanner.Text(), ":")[1], " ") {
-		n, _ := strconv.Atoi(k)
-		seeds = append(seeds, n)
-	}
-
-	scanner.Scan()
-	scanner.Scan()
-	scanner.Scan()
-	count := 0
-	for scanner.Text() != "" {
-		mapping = append(mapping, make([]int, 3))
-		for i, k := range strings.Split(scanner.Text(), " ") {
-			mapping[count][i], _ = strconv.Atoi(k)
+		n, err := strconv.Atoi(k)
+		if err == nil {
+			seeds = append(seeds, n)
 		}
-		scanner.Scan()
-		count++
+	}
+	for scanner.Scan() {
+		if strings.Contains(scanner.Text(), ":") {
+			check = make([]bool, len(seeds))
+		} else {
+			for i, k := range strings.Split(scanner.Text(), " ") {
+				mapping[i], _ = strconv.Atoi(k)
+			}
+			for i := range seeds {
+				if seeds[i] >= mapping[1] && seeds[i] < mapping[1]+mapping[2] && !check[i] {
+					seeds[i] = seeds[i] - mapping[1] + mapping[0]
+					check[i] = true
+				}
+			}
+		}
 	}
 
-	fmt.Printf("mapping: %v\n", mapping)
-
-	fmt.Printf("seeds: %v\n", seeds)
-
-	return 0
+	return slices.Min(seeds)
 }
