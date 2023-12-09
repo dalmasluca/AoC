@@ -6,12 +6,14 @@ import (
 )
 
 func main() {
-	r1 := puzzle1(os.Args[1])
-	if r1 == 0 {
+	test1 := puzzle1(os.Args[1])
+	fmt.Printf("test1: %v\n", test1)
+	if test1 == 0 {
 		fmt.Printf("puzzle1: %v\n", puzzle1(os.Args[2]))
 	}
-	r2 := puzzle2(os.Args[1])
-	if r2 == 0 {
+	test2 := puzzle2(os.Args[1])
+	fmt.Printf("test2: %v\n", test2)
+	if test2 == 0 {
 		fmt.Printf("puzzle2: %v\n", puzzle2(os.Args[2]))
 	}
 }
