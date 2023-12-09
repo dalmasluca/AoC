@@ -3,20 +3,12 @@ package main
 import (
 	"bufio"
 	"os"
+	"slices"
 	"strconv"
 	"strings"
 )
 
-func allzeros(s []int) bool {
-	for i := range s {
-		if s[i] != 0 {
-			return false
-		}
-	}
-	return true
-}
-
-func puzzle1(name string) int {
+func puzzle2(name string) int {
 	in, _ := os.Open(name)
 	scanner := bufio.NewScanner(in)
 
@@ -38,7 +30,8 @@ func puzzle1(name string) int {
 			}
 		}
 		for i := len(scan) - 2; i >= 0; i-- {
-			scan[i] = append(scan[i], scan[i][len(scan[i])-1]+scan[i+1][len(scan[i+1])-1])
+			scan[i] = slices.Insert(scan[i], 0, scan[i][0]-scan[i+1][0])
+			//scan[i] = append(scan[i], scan[i][len(scan[i])-1]+scan[i+1][len(scan[i+1])-1])
 		}
 		/*for i, k := range scan {
 			fmt.Printf(strings.Repeat(space, i*3))
@@ -50,7 +43,7 @@ func puzzle1(name string) int {
 		fmt.Printf("\n")
 		fmt.Printf("\n")
 		fmt.Printf("\n")*/
-		res += scan[0][len(scan[0])-1]
+		res += scan[0][0]
 	}
 
 	return res
