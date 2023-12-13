@@ -13,6 +13,7 @@ My solution for [Advent of Code](https://adventofcode.com)
     - [day 8](https://github.com/dalmasluca/AoC/tree/master/AoC23/08)
     - [day 9](https://github.com/dalmasluca/AoC/tree/master/AoC23/09)
     - [day 10](https://github.com/dalmasluca/AoC/tree/master/AoC23/10)
+    - [day 11](https://github.com/dalmasluca/AoC/tree/master/AoC23/11)
 
 
 
