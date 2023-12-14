@@ -42,21 +42,12 @@ func puzzle2(name string) int {
 	for i = 0; i < 1000000000; i++ {
 		m = rollRocks(rotate(rollRocks(rotate((rollRocks(rotate(rollRocks(rotate(m)))))))))
 		if e := In(history, m); e != -1 {
-			fmt.Printf("found it! after %v cycles!\n", i)
-			fmt.Printf("e: %v\n", e)
 			history = history[e:]
 			l = e
 			break
 		}
 		history = append(history, m)
 	}
-	for i := range m {
-		for j := range m[i] {
-			fmt.Printf("%v", m[i][j])
-		}
-		fmt.Println()
-	}
-	fmt.Printf("history: %v\n", history)
 	res := 0
 	pos := (1000000000 - l) % len(history)
 	afert := history[pos]
