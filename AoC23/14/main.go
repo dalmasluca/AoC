@@ -13,7 +13,7 @@ func main() {
 	}
 	test2 := puzzle2(os.Args[1])
 	fmt.Printf("test2: %v\n", test2)
-	if test2 == 0 {
+	if test2 == 64 {
 		fmt.Printf("puzzle2: %v\n", puzzle2(os.Args[2]))
 	}
 }

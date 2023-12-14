@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func transpost(m [][]string) [][]string {
+func rotate(m [][]string) [][]string {
 	var t [][]string
 	for j := range m[0] {
 		col := make([]string, 0)
@@ -25,10 +25,8 @@ func rollRocks(m [][]string) [][]string {
 				var k int
 				for k = j + 1; k < len(m[0]) && m[i][k] != "#" && m[i][k] != "O"; k++ {
 				}
-				if k != 0 {
-					m[i][j] = "."
-					m[i][k-1] = "O"
-				}
+				m[i][j] = "."
+				m[i][k-1] = "O"
 			}
 		}
 	}
@@ -44,7 +42,7 @@ func puzzle1(name string) int {
 		m = append(m, strings.Split(scanner.Text(), ""))
 	}
 
-	m = rollRocks(transpost(m))
+	m = rollRocks(rotate(m))
 	res := 0
 	for i := range m {
 		for j := range m[i] {
