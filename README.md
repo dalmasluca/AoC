@@ -2,6 +2,11 @@
 
 My solution for [Advent of Code](https://adventofcode.com)
 
+- [2024](https://github.com/dalmasluca/AoC/tree/master/AoC24)
+    - [day 1](https://github.com/dalmasluca/AoC/tree/master/AoC24/01) 
+
+
+
 - [2023](https://github.com/dalmasluca/AoC/tree/master/AoC23)
     - [day 1](https://github.com/dalmasluca/AoC/tree/master/AoC23/01) 
     - [day 2](https://github.com/dalmasluca/AoC/tree/master/AoC23/02)

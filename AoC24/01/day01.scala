@@ -1,3 +1,4 @@
+package day
 import scala.io.Source
 
 class Day(path: String) {
