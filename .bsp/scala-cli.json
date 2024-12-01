@@ -1,0 +1,20 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "/Users/luca/Library/Application Support/Coursier/bin/.scala-cli.aux",
+    "bsp",
+    "--json-options",
+    "/Users/luca/Documents/AoC/.scala-build/ide-options-v2.json",
+    "--json-launcher-options",
+    "/Users/luca/Documents/AoC/.scala-build/ide-launcher-options.json",
+    "--envs-file",
+    "/Users/luca/Documents/AoC/.scala-build/ide-envs.json",
+    "/Users/luca/Documents/AoC"
+  ],
+  "version": "1.5.3",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
