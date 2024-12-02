@@ -4593,3 +4593,653 @@ Exception in thread "pool-13-thread-1" java.lang.InterruptedException
 2024.12.01 22:03:27 INFO  Shutting down server[0m
 2024.12.01 22:03:27 INFO  shutting down Metals[0m
 2024.12.01 22:03:27 INFO  Shut down connection with build server.[0m
+2024.12.02 12:16:45 INFO  Started: Metals version 1.4.1 in folders '/Users/luca/Documents/AoC' for client Neovim 0.10.2.[0m
+2024.12.02 12:16:45 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.[0m
+2024.12.02 12:16:46 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:16:46 INFO  Attempting to connect to the build server...[0m
+2024.12.02 12:16:46 INFO  Running BSP server List(/Users/luca/Library/Application Support/Coursier/bin/.scala-cli.aux, bsp, --json-options, /Users/luca/Documents/AoC/.scala-build/ide-options-v2.json, --json-launcher-options, /Users/luca/Documents/AoC/.scala-build/ide-launcher-options.json, --envs-file, /Users/luca/Documents/AoC/.scala-build/ide-envs.json, /Users/luca/Documents/AoC)[0m
+2024.12.02 12:16:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/luca/Documents/AoC/.metals/bsp.trace.json or /Users/luca/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.12.02 12:16:46 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:16:48 INFO  BSP server: Starting compilation server[0m
+2024.12.02 12:16:50 INFO  time: Connected to build server in 4.16s[0m
+2024.12.02 12:16:50 INFO  Connected to Build server: scala-cli v1.5.3[0m
+2024.12.02 12:16:50 INFO  running doctor check[0m
+2024.12.02 12:16:50 INFO  java targets: AoC_d5c0a6989e-test, AoC_d5c0a6989e[0m
+2024.12.02 12:16:50 INFO  compiling aoc_d5c0a6989e (3 scala sources)[0m
+2024.12.02 12:16:52 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.[0m
+2024.12.02 12:16:52 INFO  time: indexed workspace in 2.37s[0m
+2024.12.02 12:16:53 INFO  time: compiled AoC_d5c0a6989e in 2.33s[0m
+2024.12.02 12:16:53 INFO  compiling aoc_d5c0a6989e (3 scala sources)[0m
+2024.12.02 12:16:53 INFO  time: compiled AoC_d5c0a6989e in 0.5s[0m
+2024.12.02 12:16:53 INFO  compiling aoc_d5c0a6989e (3 scala sources)[0m
+2024.12.02 12:16:54 INFO  time: compiled AoC_d5c0a6989e in 0.44s[0m
+2024.12.02 12:16:54 INFO  compiling aoc_d5c0a6989e (3 scala sources)[0m
+2024.12.02 12:16:54 INFO  time: compiled AoC_d5c0a6989e in 0.33s[0m
+2024.12.02 12:17:43 INFO  compiling aoc_d5c0a6989e (3 scala sources)[0m
+2024.12.02 12:17:43 INFO  time: compiled AoC_d5c0a6989e in 0.21s[0m
+2024.12.02 12:17:50 INFO  compiling aoc_d5c0a6989e (3 scala sources)[0m
+2024.12.02 12:17:50 INFO  time: compiled AoC_d5c0a6989e in 0.21s[0m
+2024.12.02 12:17:59 INFO  compiling aoc_d5c0a6989e (3 scala sources)[0m
+2024.12.02 12:18:01 INFO  time: compiled AoC_d5c0a6989e in 1.59s[0m
+2024.12.02 12:18:28 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:18:28 INFO  time: compiled AoC_d5c0a6989e in 0.26s[0m
+2024.12.02 12:18:38 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:18:38 INFO  time: compiled AoC_d5c0a6989e in 0.21s[0m
+2024.12.02 12:22:10 INFO  Shutting down server[0m
+2024.12.02 12:22:10 INFO  shutting down Metals[0m
+2024.12.02 12:22:10 INFO  Shut down connection with build server.[0m
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleepNanos0(Native Method)
+	at java.base/java.lang.Thread.sleepNanos(Thread.java:496)
+	at java.base/java.lang.Thread.sleep(Thread.java:527)
+	at scala.meta.internal.pc.CompilerJobQueue.delay(CompilerJobQueue.scala:102)
+	at scala.meta.internal.pc.CompilerJobQueue.shutdown(CompilerJobQueue.scala:79)
+	at scala.meta.internal.pc.CompilerAccess.shutdown(CompilerAccess.scala:69)
+	at dotty.tools.pc.ScalaPresentationCompiler.shutdown(ScalaPresentationCompiler.scala:212)
+	at scala.meta.internal.metals.CompilerConfiguration$LazyCompiler.$anonfun$shutdown$1(CompilerConfiguration.scala:151)
+	at scala.meta.internal.metals.CompilerConfiguration$LazyCompiler.$anonfun$shutdown$1$adapted(CompilerConfiguration.scala:150)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2024.12.02 12:22:31 INFO  Started: Metals version 1.4.1 in folders '/Users/luca/Documents/AoC' for client Neovim 0.10.2.[0m
+2024.12.02 12:22:31 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.[0m
+2024.12.02 12:22:31 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:31 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:31 INFO  Attempting to connect to the build server...[0m
+2024.12.02 12:22:31 INFO  Running BSP server List(/Users/luca/Library/Application Support/Coursier/bin/.scala-cli.aux, bsp, --json-options, /Users/luca/Documents/AoC/.scala-build/ide-options-v2.json, --json-launcher-options, /Users/luca/Documents/AoC/.scala-build/ide-launcher-options.json, --envs-file, /Users/luca/Documents/AoC/.scala-build/ide-envs.json, /Users/luca/Documents/AoC)[0m
+2024.12.02 12:22:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/luca/Documents/AoC/.metals/bsp.trace.json or /Users/luca/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.12.02 12:22:32 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:32 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:32 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:32 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:32 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:32 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:33 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:32 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:33 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:33 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:33 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:33 INFO  no build target found for /Users/luca/Documents/AoC/AoC24/02/puzzle.scala. Using presentation compiler with project's scala-library version: 3.3.4[0m
+2024.12.02 12:22:33 INFO  time: Connected to build server in 1.96s[0m
+2024.12.02 12:22:33 INFO  Connected to Build server: scala-cli v1.5.3[0m
+2024.12.02 12:22:33 INFO  running doctor check[0m
+2024.12.02 12:22:33 INFO  java targets: AoC_d5c0a6989e-test, AoC_d5c0a6989e[0m
+2024.12.02 12:22:36 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.[0m
+2024.12.02 12:22:36 INFO  time: indexed workspace in 2.63s[0m
+2024.12.02 12:23:13 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:23:13 INFO  time: compiled AoC_d5c0a6989e in 0.28s[0m
+2024.12.02 12:23:19 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:23:19 INFO  time: compiled AoC_d5c0a6989e in 0.24s[0m
+2024.12.02 12:31:32 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:13: error: [dialect scala3] ) expected but } found
+  }
+  ^[0m
+2024.12.02 12:31:32 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:31:32 INFO  time: compiled AoC_d5c0a6989e in 0.45s[0m
+2024.12.02 12:32:07 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:13: error: [dialect scala3] ) expected but } found
+  }
+  ^[0m
+2024.12.02 12:32:07 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:32:07 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 12:32:15 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] ; expected but => found
+    lines.foreach(_.foldLeft((lines(0), true)) {((acc, pred), el) => }
+                                                                  ^[0m
+2024.12.02 12:32:16 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:32:16 INFO  Deduplicating compilation of AoC_d5c0a6989e from bsp client 'scala-cli 1.5.3' (since 9m 43.175s)[0m
+2024.12.02 12:32:16 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:32:16 INFO  time: compiled AoC_d5c0a6989e in 51ms[0m
+2024.12.02 12:32:16 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:32:16 INFO  time: compiled AoC_d5c0a6989e in 91ms[0m
+2024.12.02 12:32:36 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] ; expected but => found
+    lines.foreach(_.foldLeft(lines(0), true) {((acc, pred), el) => }
+                                                                ^[0m
+2024.12.02 12:32:36 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:32:36 INFO  time: compiled AoC_d5c0a6989e in 90ms[0m
+2024.12.02 12:32:55 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] ; expected but => found
+    lines.foreach(_.foldLeft(lines(0), true) {((acc, pred), el) => }
+                                                                ^[0m
+2024.12.02 12:32:55 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:32:55 INFO  time: compiled AoC_d5c0a6989e in 84ms[0m
+2024.12.02 12:33:03 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:13: error: [dialect scala3] ) expected but } found
+  }
+  ^[0m
+2024.12.02 12:33:03 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:33:03 INFO  time: compiled AoC_d5c0a6989e in 94ms[0m
+2024.12.02 12:33:08 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:33:08 INFO  time: compiled AoC_d5c0a6989e in 96ms[0m
+2024.12.02 12:33:12 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:33:12 INFO  time: compiled AoC_d5c0a6989e in 85ms[0m
+2024.12.02 12:33:20 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:33:20 INFO  time: compiled AoC_d5c0a6989e in 0.24s[0m
+2024.12.02 12:33:29 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:33:29 INFO  time: compiled AoC_d5c0a6989e in 80ms[0m
+2024.12.02 12:33:36 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:33:36 INFO  time: compiled AoC_d5c0a6989e in 79ms[0m
+2024.12.02 12:33:47 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:33:47 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 12:34:12 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] illegal start of simple expression
+    lines.foreach(line => line.foldLeft((line(0), true)) {((prec, val), el) =<})
+                                                                  ^[0m
+2024.12.02 12:34:13 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:34:13 INFO  time: compiled AoC_d5c0a6989e in 89ms[0m
+2024.12.02 12:34:43 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] illegal start of simple expression
+    lines.foreach(line => line.foldLeft((line(0), true)) {((prec, val), el) => })
+                                                                  ^[0m
+2024.12.02 12:34:43 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:34:43 INFO  time: compiled AoC_d5c0a6989e in 94ms[0m
+2024.12.02 12:35:21 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] ; expected but => found
+    lines.foreach(line => line.foldLeft((line(0), true)) {((prec, pred), el) => {if (prec < el)} })
+                                                                             ^[0m
+2024.12.02 12:35:21 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:35:21 INFO  time: compiled AoC_d5c0a6989e in 96ms[0m
+2024.12.02 12:36:14 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] ; expected but => found
+  lines.foreach(line => line.foldLeft((line(0), true)) {((prec, pred), el) => (el, pred && (prec <= el))} })
+                                                                           ^[0m
+2024.12.02 12:36:15 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:36:15 INFO  time: compiled AoC_d5c0a6989e in 99ms[0m
+2024.12.02 12:39:50 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] ; expected but => found
+  lines.foreach(line => line.foldLeft((line(0), true)) {((prec, pred), el) => (el, pred && prec <= el)} })
+                                                                           ^[0m
+2024.12.02 12:39:50 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:39:50 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 12:41:07 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:12: error: [dialect scala3] ; expected but => found
+  lines.foreach(line => line.foldLeft((line(0), true)) {((prec, pred), el) => (el, pred && prec <= el)})
+                                                                           ^[0m
+2024.12.02 12:41:07 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:41:07 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 12:46:23 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:46:23 INFO  time: compiled AoC_d5c0a6989e in 0.28s[0m
+2024.12.02 12:46:25 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:46:25 INFO  time: compiled AoC_d5c0a6989e in 0.19s[0m
+2024.12.02 12:46:47 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:46:47 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 12:47:12 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:47:12 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 12:47:40 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:47:40 INFO  time: compiled AoC_d5c0a6989e in 0.2s[0m
+2024.12.02 12:48:15 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:48:15 INFO  time: compiled AoC_d5c0a6989e in 0.22s[0m
+2024.12.02 12:48:28 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:48:28 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 12:48:36 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:48:36 INFO  time: compiled AoC_d5c0a6989e in 0.19s[0m
+2024.12.02 12:48:42 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:48:42 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 12:48:52 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:16: error: trailing separator is not allowed
+        }.1_
+           ^[0m
+2024.12.02 12:48:52 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:48:52 INFO  time: compiled AoC_d5c0a6989e in 83ms[0m
+2024.12.02 12:49:10 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:49:10 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 12:49:16 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:49:16 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 12:49:31 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:49:31 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 12:49:57 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:49:57 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 12:50:12 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:50:12 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 12:52:35 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:52:35 INFO  time: compiled AoC_d5c0a6989e in 0.2s[0m
+2024.12.02 12:52:46 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:52:46 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 12:53:14 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:53:14 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 12:54:17 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:54:17 INFO  time: compiled AoC_d5c0a6989e in 0.19s[0m
+2024.12.02 12:54:46 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:54:46 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 12:55:06 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:55:06 INFO  time: compiled AoC_d5c0a6989e in 0.34s[0m
+2024.12.02 12:58:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:58:22 INFO  time: compiled AoC_d5c0a6989e in 0.11s[0m
+2024.12.02 12:58:41 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 12:58:41 INFO  time: compiled AoC_d5c0a6989e in 85ms[0m
+2024.12.02 12:58:48 INFO  time: compiled AoC_d5c0a6989e in 4ms[0m
+2024.12.02 13:04:34 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:04:34 INFO  time: compiled AoC_d5c0a6989e in 0.39s[0m
+2024.12.02 13:05:42 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:05:42 INFO  time: compiled AoC_d5c0a6989e in 0.25s[0m
+2024.12.02 13:10:32 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:10:32 INFO  time: compiled AoC_d5c0a6989e in 0.3s[0m
+2024.12.02 13:10:41 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:10:41 INFO  time: compiled AoC_d5c0a6989e in 0.2s[0m
+2024.12.02 13:11:16 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:11:16 INFO  time: compiled AoC_d5c0a6989e in 0.26s[0m
+2024.12.02 13:13:15 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:13:15 INFO  time: compiled AoC_d5c0a6989e in 0.23s[0m
+2024.12.02 13:13:49 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:13:49 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 13:15:13 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:15:13 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 13:16:03 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:16:03 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 13:16:51 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:16:51 INFO  time: compiled AoC_d5c0a6989e in 90ms[0m
+2024.12.02 13:16:58 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:16:58 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 13:21:13 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 13:21:13 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 14:45:43 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:45:43 INFO  time: compiled AoC_d5c0a6989e in 0.19s[0m
+2024.12.02 14:46:06 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:46:06 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 14:49:46 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:14: error: [dialect scala3] illegal start of simple expression
+        case Seq(a, b) => (b - a).abs
+        ^[0m
+2024.12.02 14:49:46 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:49:46 INFO  time: compiled AoC_d5c0a6989e in 69ms[0m
+2024.12.02 14:50:53 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:50:53 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 14:51:51 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:51:51 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 14:52:11 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:52:11 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 14:52:58 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:52:58 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 14:53:03 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:53:03 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 14:53:24 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:53:24 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 14:54:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:54:22 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 14:54:45 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:54:45 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 14:54:56 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:54:56 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 14:55:02 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:55:02 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 14:56:00 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:56:00 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 14:56:11 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:56:11 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 14:56:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:56:22 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 14:57:10 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:57:10 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 14:57:20 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:57:20 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 14:57:30 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:57:30 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 14:58:15 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:13: error: [dialect scala3] illegal start of simple expression
+  }
+  ^[0m
+2024.12.02 14:58:16 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:58:16 INFO  time: compiled AoC_d5c0a6989e in 65ms[0m
+2024.12.02 14:58:20 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:58:20 INFO  time: compiled AoC_d5c0a6989e in 71ms[0m
+2024.12.02 14:58:55 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 14:58:55 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 15:01:08 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:13: error: [dialect scala3] illegal start of simple expression
+    )
+    ^[0m
+2024.12.02 15:01:08 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:01:08 INFO  time: compiled AoC_d5c0a6989e in 80ms[0m
+2024.12.02 15:01:24 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:01:24 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 15:02:38 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:16: error: [dialect scala3] illegal start of simple expression
+          case Seq(a, b) =>
+          ^[0m
+2024.12.02 15:02:38 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:02:38 INFO  time: compiled AoC_d5c0a6989e in 75ms[0m
+2024.12.02 15:02:49 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:02:49 INFO  Deduplicating compilation of AoC_d5c0a6989e from bsp client 'scala-cli 1.5.3' (since 2h 40m 16.17s)[0m
+2024.12.02 15:02:49 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:02:49 INFO  time: compiled AoC_d5c0a6989e in 95ms[0m
+2024.12.02 15:02:49 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:02:49 INFO  Deduplicating compilation of AoC_d5c0a6989e from bsp client 'scala-cli 1.5.3' (since 2h 40m 16.377s)[0m
+2024.12.02 15:02:49 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:02:49 INFO  time: compiled AoC_d5c0a6989e in 39ms[0m
+2024.12.02 15:06:02 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:06:02 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:06:40 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:06:40 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 15:07:44 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:07:44 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 15:07:56 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:07:56 INFO  time: compiled AoC_d5c0a6989e in 79ms[0m
+2024.12.02 15:08:11 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:08:11 INFO  time: compiled AoC_d5c0a6989e in 79ms[0m
+2024.12.02 15:08:14 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:08:14 INFO  time: compiled AoC_d5c0a6989e in 69ms[0m
+2024.12.02 15:08:26 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:14: error: [dialect scala3] illegal start of simple expression
+      .forall(case (a, b) =>
+              ^[0m
+2024.12.02 15:08:26 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:08:26 INFO  time: compiled AoC_d5c0a6989e in 60ms[0m
+2024.12.02 15:08:46 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:08:46 INFO  time: compiled AoC_d5c0a6989e in 73ms[0m
+2024.12.02 15:09:41 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:09:41 INFO  time: compiled AoC_d5c0a6989e in 78ms[0m
+2024.12.02 15:10:08 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:10:08 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 15:13:45 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:13:45 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 15:14:31 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:14:31 INFO  time: compiled AoC_d5c0a6989e in 85ms[0m
+2024.12.02 15:14:42 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:14:42 INFO  Deduplicating compilation of AoC_d5c0a6989e from bsp client 'scala-cli 1.5.3' (since 2h 52m 9.393s)[0m
+2024.12.02 15:14:42 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:14:42 INFO  time: compiled AoC_d5c0a6989e in 40ms[0m
+2024.12.02 15:14:42 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:14:42 INFO  time: compiled AoC_d5c0a6989e in 61ms[0m
+2024.12.02 15:14:48 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:14: error: [dialect scala3] illegal start of statement
+      .sliding(2)
+      ^[0m
+2024.12.02 15:14:48 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:14:48 INFO  time: compiled AoC_d5c0a6989e in 74ms[0m
+2024.12.02 15:14:54 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:14: error: [dialect scala3] illegal start of statement
+      .sliding(2)
+      ^[0m
+2024.12.02 15:14:54 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:14:54 INFO  time: compiled AoC_d5c0a6989e in 63ms[0m
+2024.12.02 15:15:14 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:15: error: [dialect scala3] ; expected but . found
+      .sliding(2)
+      ^[0m
+2024.12.02 15:15:14 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:15:14 INFO  time: compiled AoC_d5c0a6989e in 76ms[0m
+2024.12.02 15:15:19 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:15: error: [dialect scala3] ; expected but . found
+      .forall { line =>
+      ^[0m
+2024.12.02 15:15:19 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:15:19 INFO  time: compiled AoC_d5c0a6989e in 68ms[0m
+Dec 02, 2024 3:15:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 3031,
+      "uri": "file:///Users/luca/Documents/AoC/AoC24/02/puzzle.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "package day\nimport scala.io.Source\n\nclass Day2(path: String) {\n  val lines \u003d Source\n    .fromFile(path)\n    .getLines()\n    .toList\n    .map(_.split(\" \").map(_.toInt))\n\n  def part1: Int \u003d {\n    lines\n      .foreach{ line \u003d\u003e\n        line.sliding(2).forall { line \u003d\u003e\n          lin\n        }\n      }\n  }\n  def part2: Int \u003d {\n    0\n  }\n}\n"
+      }
+    ]
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didChange(org.eclipse.lsp4j.DidChangeTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixPath.toRealPath(UnixPath.java:885)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.dealias(ScalametaCommonEnrichments.scala:342)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:132)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:190)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:774)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:771)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:163)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:505)
+	at scala.meta.internal.metals.Diagnostics.toFreshDiagnostic(Diagnostics.scala:316)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$2(Diagnostics.scala:276)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$2$adapted(Diagnostics.scala:275)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:275)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:240)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:153)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:865)
+	at scala.meta.internal.metals.ProjectMetalsLspService.didChange(ProjectMetalsLspService.scala:225)
+	at scala.meta.internal.metals.WorkspaceLspService.didChange(WorkspaceLspService.scala:407)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2024.12.02 15:15:24 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:15:24 INFO  time: compiled AoC_d5c0a6989e in 72ms[0m
+2024.12.02 15:15:26 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:15:26 INFO  time: compiled AoC_d5c0a6989e in 53ms[0m
+2024.12.02 15:15:32 ERROR scalafmt: /Users/luca/Documents/AoC/AoC24/02/puzzle.scala:16: error: [dialect scala3] illegal start of statement
+          .forall {  =>
+                     ^[0m
+2024.12.02 15:15:32 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:15:32 INFO  time: compiled AoC_d5c0a6989e in 78ms[0m
+2024.12.02 15:15:34 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:15:34 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 15:16:20 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:16:20 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 15:17:07 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:17:07 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 15:17:18 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:17:18 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:17:27 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:17:27 INFO  time: compiled AoC_d5c0a6989e in 78ms[0m
+2024.12.02 15:17:35 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:17:35 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:17:39 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:17:39 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 15:18:12 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:18:12 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:18:20 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:18:20 INFO  time: compiled AoC_d5c0a6989e in 0.38s[0m
+2024.12.02 15:18:59 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:18:59 INFO  time: compiled AoC_d5c0a6989e in 0.32s[0m
+2024.12.02 15:19:14 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:19:14 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 15:21:19 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:21:19 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 15:22:06 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:22:06 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 15:22:10 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:22:10 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 15:22:33 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:22:33 INFO  time: compiled AoC_d5c0a6989e in 73ms[0m
+2024.12.02 15:22:40 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:22:40 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 15:23:20 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:23:20 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 15:23:37 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:23:37 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 15:24:15 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:24:15 INFO  time: compiled AoC_d5c0a6989e in 70ms[0m
+2024.12.02 15:24:35 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:24:35 INFO  time: compiled AoC_d5c0a6989e in 83ms[0m
+2024.12.02 15:24:54 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:24:54 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 15:25:01 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:25:01 INFO  time: compiled AoC_d5c0a6989e in 69ms[0m
+2024.12.02 15:25:05 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:25:05 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 15:25:17 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:25:17 INFO  time: compiled AoC_d5c0a6989e in 0.21s[0m
+2024.12.02 15:25:50 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:25:50 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 15:25:57 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:25:57 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 15:28:34 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:28:34 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 15:28:47 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:28:47 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:29:38 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:29:38 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 15:29:49 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:29:49 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:30:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:30:22 INFO  time: compiled AoC_d5c0a6989e in 92ms[0m
+2024.12.02 15:30:24 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:30:24 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 15:31:04 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:31:04 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 15:31:39 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:31:39 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 15:31:51 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:31:51 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:33:32 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:33:32 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 15:33:41 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:33:41 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 15:34:31 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:34:31 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 15:34:36 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:34:36 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 15:34:57 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:34:57 INFO  time: compiled AoC_d5c0a6989e in 0.16s[0m
+2024.12.02 15:53:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:53:22 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 15:53:44 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:53:44 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 15:53:53 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:53:53 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 15:54:01 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:54:01 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 15:54:08 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:54:08 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 15:54:11 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:54:11 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 15:54:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:54:22 INFO  Deduplicating compilation of AoC_d5c0a6989e from bsp client 'scala-cli 1.5.3' (since 3h 31m 49.715s)[0m
+2024.12.02 15:54:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:54:22 INFO  time: compiled AoC_d5c0a6989e in 89ms[0m
+2024.12.02 15:54:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:54:22 INFO  Deduplicating compilation of AoC_d5c0a6989e from bsp client 'scala-cli 1.5.3' (since 3h 31m 49.92s)[0m
+2024.12.02 15:54:22 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:54:22 INFO  time: compiled AoC_d5c0a6989e in 36ms[0m
+2024.12.02 15:54:27 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:54:27 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 15:55:31 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:55:31 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:55:36 INFO  time: compiled AoC_d5c0a6989e in 1ms[0m
+2024.12.02 15:56:18 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:56:18 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 15:59:07 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:59:07 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 15:59:24 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:59:24 INFO  time: compiled AoC_d5c0a6989e in 0.23s[0m
+2024.12.02 15:59:29 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 15:59:29 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 16:55:39 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 16:55:39 INFO  time: compiled AoC_d5c0a6989e in 0.18s[0m
+2024.12.02 16:55:49 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 16:55:49 INFO  time: compiled AoC_d5c0a6989e in 0.31s[0m
+2024.12.02 16:56:11 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 16:56:11 INFO  time: compiled AoC_d5c0a6989e in 0.25s[0m
+2024.12.02 16:56:34 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 16:56:34 INFO  time: compiled AoC_d5c0a6989e in 0.19s[0m
+2024.12.02 16:56:38 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 16:56:38 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 16:58:05 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 16:58:05 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 16:58:23 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 16:58:23 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 16:59:27 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 16:59:27 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 17:01:12 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 17:01:12 INFO  time: compiled AoC_d5c0a6989e in 0.19s[0m
+2024.12.02 17:01:58 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 17:01:58 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 17:02:11 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 17:02:11 INFO  time: compiled AoC_d5c0a6989e in 0.2s[0m
+2024.12.02 17:02:53 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 17:02:53 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 17:03:17 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 17:03:17 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 17:03:24 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 17:03:24 INFO  time: compiled AoC_d5c0a6989e in 0.14s[0m
+2024.12.02 21:11:18 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:11:18 INFO  time: compiled AoC_d5c0a6989e in 0.19s[0m
+2024.12.02 21:11:32 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:11:32 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 21:55:13 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:55:13 INFO  time: compiled AoC_d5c0a6989e in 0.17s[0m
+2024.12.02 21:55:25 INFO  Cancelling compilation on scala-cli server[0m
+2024.12.02 21:55:25 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:55:25 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 21:55:25 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:55:25 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 21:55:25 INFO  time: Imported build in 0.29s[0m
+2024.12.02 21:55:25 INFO  time: Imported build in 0.28s[0m
+2024.12.02 21:55:25 INFO  running doctor check[0m
+2024.12.02 21:55:25 INFO  running doctor check[0m
+2024.12.02 21:55:25 INFO  java targets: AoC_d5c0a6989e-test, AoC_d5c0a6989e[0m
+2024.12.02 21:55:25 INFO  java targets: AoC_d5c0a6989e-test, AoC_d5c0a6989e[0m
+2024.12.02 21:55:25 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:55:25 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 21:55:26 INFO  time: indexed workspace in 1.27s[0m
+2024.12.02 21:55:26 INFO  time: indexed workspace in 1.28s[0m
+2024.12.02 21:55:26 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:55:26 INFO  time: compiled AoC_d5c0a6989e in 0.13s[0m
+2024.12.02 21:55:26 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:55:26 INFO  time: compiled AoC_d5c0a6989e in 98ms[0m
+2024.12.02 21:55:28 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:55:28 INFO  time: compiled AoC_d5c0a6989e in 95ms[0m
+2024.12.02 21:55:58 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:55:58 INFO  time: compiled AoC_d5c0a6989e in 0.12s[0m
+2024.12.02 21:56:06 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:56:06 INFO  Deduplicating compilation of AoC_d5c0a6989e from bsp client 'scala-cli 1.5.3' (since 9h 33m 33.954s)[0m
+2024.12.02 21:56:06 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:56:06 INFO  time: compiled AoC_d5c0a6989e in 83ms[0m
+2024.12.02 21:56:06 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:56:06 INFO  time: compiled AoC_d5c0a6989e in 0.1s[0m
+2024.12.02 21:56:58 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:56:58 INFO  time: compiled AoC_d5c0a6989e in 80ms[0m
+2024.12.02 21:57:00 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:57:00 INFO  time: compiled AoC_d5c0a6989e in 0.3s[0m
+2024.12.02 21:58:03 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:58:03 INFO  time: compiled AoC_d5c0a6989e in 0.22s[0m
+2024.12.02 21:59:23 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:59:23 INFO  Deduplicating compilation of AoC_d5c0a6989e from bsp client 'scala-cli 1.5.3' (since 9h 36m 50.42s)[0m
+2024.12.02 21:59:23 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:59:23 INFO  time: compiled AoC_d5c0a6989e in 0.1s[0m
+2024.12.02 21:59:23 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 21:59:23 INFO  time: compiled AoC_d5c0a6989e in 0.1s[0m
+2024.12.02 22:04:29 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 22:04:29 INFO  time: compiled AoC_d5c0a6989e in 0.15s[0m
+2024.12.02 22:04:49 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 22:04:49 INFO  time: compiled AoC_d5c0a6989e in 80ms[0m
+2024.12.02 22:04:58 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 22:04:58 INFO  time: compiled AoC_d5c0a6989e in 0.19s[0m
+2024.12.02 22:07:19 INFO  compiling aoc_d5c0a6989e (1 scala source)[0m
+2024.12.02 22:07:19 INFO  time: compiled AoC_d5c0a6989e in 0.23s[0m
+2024.12.02 22:07:21 INFO  Shutting down server[0m
+2024.12.02 22:07:21 INFO  shutting down Metals[0m
+2024.12.02 22:07:21 INFO  Shut down connection with build server.[0m
+2024.12.02 22:07:21 INFO  Cancelling compilation on scala-cli server[0m
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleepNanos0(Native Method)
+	at java.base/java.lang.Thread.sleepNanos(Thread.java:496)
+	at java.base/java.lang.Thread.sleep(Thread.java:527)
+	at scala.meta.internal.pc.CompilerJobQueue.delay(CompilerJobQueue.scala:102)
+	at scala.meta.internal.pc.CompilerJobQueue.shutdown(CompilerJobQueue.scala:79)
+	at scala.meta.internal.pc.CompilerAccess.shutdown(CompilerAccess.scala:69)
+	at dotty.tools.pc.ScalaPresentationCompiler.shutdown(ScalaPresentationCompiler.scala:212)
+	at scala.meta.internal.metals.CompilerConfiguration$LazyCompiler.$anonfun$shutdown$1(CompilerConfiguration.scala:151)
+	at scala.meta.internal.metals.CompilerConfiguration$LazyCompiler.$anonfun$shutdown$1$adapted(CompilerConfiguration.scala:150)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+java.util.concurrent.RejectedExecutionException: Task Future(<not completed>) rejected from java.util.concurrent.ThreadPoolExecutor@57fffcd7[Shutting down, pool size = 3, active threads = 3, queued tasks = 0, completed tasks = 95578]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2082)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1377)
+	at scala.concurrent.impl.ExecutionContextImpl.execute(ExecutionContextImpl.scala:21)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.handleFailure(Promise.scala:444)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:435)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.handleFailure(Promise.scala:444)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:506)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
