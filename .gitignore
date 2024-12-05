@@ -1,2 +1,9 @@
 *.txt
 *.in
+*.class
+.bsp/*
+.metals/*
+.scala-build/*
+.bsp/
+.metals/
+.scala-build/
