@@ -1,7 +1,7 @@
 import scala.util.matching.Regex
 import scala.io.Source
 
-class Day(path: String) {
+class Day4(path: String) {
   val lines = Source
     .fromFile(path)
     .getLines()
